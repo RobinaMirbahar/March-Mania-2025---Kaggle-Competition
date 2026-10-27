@@ -1,5 +1,43 @@
 # 🏀 March Mania 2025 - Kaggle Competition
 
+> **Author & Architect:** [Robina Mirbahar](https://github.com/RobinaMirbahar) (Google Developer Expert in Cloud & AI)  
+> **Focus:** NCAA Tournament Matchup Win-Probability Forecasting with Historical Seed Differentials, Elo Ratings & Calibrated Ensembles
+
+---
+
+## 🎯 Why I Built March Mania 2025 — Kaggle NCAA Forecasting Pipeline (Engineering Purpose & Real-World Value)
+
+### 1. 🏀 Probabilistic Calibration Under High Tournament Variance
+In single-elimination NCAA tournaments, raw accuracy is a trap—competitions are won on Brier score and calibrated probabilities. I built this pipeline to produce well-calibrated win probabilities $P(A \text{ beats } B)$ across every possible Men's and Women's matchup.
+
+### 2. 📊 Historical Seed Differentials & Efficiency Metrics
+I engineered matchup differential features spanning multi-decade historical tournament seeds, win percentages, and strength-of-schedule adjustments.
+
+### 3. 🛡️ Probability Clipping Against Upset Penalties
+To prevent catastrophic log-loss/Brier penalties on 15-over-2 upsets, I implemented disciplined probability calibration and clipping.
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    subgraph Data ["1. Historical NCAA Men's & Women's Data"]
+        D_Seed["MNCAATourneySeeds & WNCAATourneySeeds"]
+        D_Res["Regular Season & Compact Tourney Results"]
+    end
+    subgraph Feat ["2. Matchup Differential Engineering"]
+        F_Diff["Seed Delta, Historical Win Rate & Elo Diff"]
+    end
+    subgraph Model ["3. Ensemble & Probability Calibration"]
+        M_Fit["Blended Gradient Boosted & Spline Models"]
+        M_Sub["Validated 2025 Kaggle Submission (ID, Pred)"]
+    end
+    D_Seed & D_Res --> F_Diff --> M_Fit --> M_Sub
+```
+
+---
+
 Welcome to my **March Mania 2025** Kaggle repository! This project focuses on predicting NCAA basketball matchups using **seed rankings** and historical data. 🏆  
 
 ## 📂 Repository Overview  
@@ -39,3 +77,22 @@ Welcome to my **March Mania 2025** Kaggle repository! This project focuses on pr
 <div align="center">
   <img src="https://raw.githubusercontent.com/RobinaMirbahar/RobinaMirbahar/main/ProfileImages/GithubBanner.svg" alt="Robina Mirbahar Banner" width="100%" />
 </div>
+
+<!-- AUTHOR_SIGNATURE_START -->
+---
+
+## 👩‍💻 About the Author
+
+**Robina Mirbahar — Google Cloud & AI Architect**  
+*Google Developer Expert (GDE) in Cloud & AI • Published Author • Multi-Agent Systems & Serverless GPU Builder*
+
+[![GitHub](https://img.shields.io/badge/GitHub-RobinaMirbahar-181717?style=for-the-badge&logo=github)](https://github.com/RobinaMirbahar)
+[![Medium](https://img.shields.io/badge/Medium-@robinamirbahar-000000?style=for-the-badge&logo=medium)](https://medium.com/@robinamirbahar)
+[![DEV.to](https://img.shields.io/badge/DEV.to-robinamirbahar-0A0A0A?style=for-the-badge&logo=devdotto)](https://dev.to/robinamirbahar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Robina_Mirbahar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robina-mirbahar)
+[![GDE Profile](https://img.shields.io/badge/Google_Developer_Expert-Profile-4285F4?style=for-the-badge&logo=google)](https://g.dev/RobinaMirbahar)
+[![YouTube](https://img.shields.io/badge/YouTube-@RobinaMirbahar-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RobinaMirbahar)
+[![X](https://img.shields.io/badge/X-@RobinaMirbahar-000000?style=for-the-badge&logo=x)](https://x.com/RobinaMirbahar)
+[![Amazon Author](https://img.shields.io/badge/Amazon_Book-Cloud_Computing_Voyage-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0D146249R)
+
+<!-- AUTHOR_SIGNATURE_END -->
