@@ -34,15 +34,6 @@ flowchart TD
         M_Sub["Validated 2025 Kaggle Submission (ID, Pred)"]
     end
     D_Seed & D_Res --> F_Diff --> M_Fit --> M_Sub
-    style Data fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
-    style D_Seed fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
-    style D_Res fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
-    style Feat fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#581c87
-    style F_Diff fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
-    style Model fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
-    style M_Fit fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
-    style M_Sub fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#581c87
-    style Submission fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
 ```
 
 ---
