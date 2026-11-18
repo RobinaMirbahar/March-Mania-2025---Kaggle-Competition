@@ -1,7 +1,8 @@
 # 🏀 March Mania 2025 - Kaggle Competition
 
 > **Author & Architect:** [Robina Mirbahar](https://github.com/RobinaMirbahar) ([Google Developer Expert in Cloud & AI](https://developers.google.com/profile/u/106918534005910641104?utm_campaign=deveco_gdemembers&utm_source=deveco) · Google Cloud Champion Innovator · Co-Author of [*AI Engineering*](https://www.amazon.com/dp/B0GWCZWCF4))  
-> **Focus:** NCAA Tournament Matchup Win-Probability Forecasting with Historical Seed Differentials, Elo Ratings & Calibrated Ensembles
+> 📚 **Competition Track:** Kaggle NCAA March Mania Tournament Forecasting Benchmark  
+> **Core Stack:** Python, LightGBM, XGBoost, CatBoost, Historical Seed Differentials, Elo Ratings, and Isotonic Probability Calibration.
 
 ---
 
